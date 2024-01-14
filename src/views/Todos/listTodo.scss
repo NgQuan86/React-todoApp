@@ -1,0 +1,32 @@
+.list-todo-container{
+    button:hover {
+        cursor: pointer;
+        background-color: gray;
+    }
+    .add-todo{
+        .add{
+            margin: 0 10px;
+        }
+    }
+
+    .list-todo-content{
+        width: 500px;
+        margin: 0 auto;
+
+
+        .todo-child{
+            &:first-child{ //dung cho dong dau tien nhung dong sau van binh thuong
+                border-top: 1px solid yellowgreen ;
+            }
+
+            height: 50px;
+            border-bottom: 1px solid yellowgreen ;
+            margin:  10px;
+            
+            .edit {
+                margin: 10px;
+            }
+            
+        }
+    }
+}
