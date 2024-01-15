@@ -2,6 +2,7 @@ import React from "react";
 import './listTodo.scss';
 import AddTodo from "./AddTodo";
 import { toast } from 'react-toastify';
+import Color from '../HOC/color'
 
 
 class ListTodo extends React.Component {
@@ -80,6 +81,7 @@ class ListTodo extends React.Component {
         let { listTodos, editTodo } = this.state; // de co the goi var ma khong can thong qua this.state.(...) 
         let isEmptyObj = Object.keys(editTodo).length === 0; // tao let isEmptyObj = true or false khi object editTodo rong hoac co phan tu
         console.log('check isEmptyObj', isEmptyObj);
+       
 
         return (
             <>
@@ -138,4 +140,4 @@ class ListTodo extends React.Component {
     }
 }
 
-export default ListTodo;
+export default Color(ListTodo);

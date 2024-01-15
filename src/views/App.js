@@ -24,8 +24,8 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/todo" element={<ListTodo />} />
+            <Route path="/"  element={<Home />} />
+            <Route path="/todo"  element={<ListTodo />} />
           </Routes>
 
         </header>
