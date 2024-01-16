@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'; 
 
+
+                    //change color random when reload page Home but not reload NavLink
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -9,7 +11,7 @@ function getRandomColor() {
     return color;
 }
 
-const Color = (WrappedComponent) => {
+const Color = (WrappedComponent) => { // truyen tu props page Home
     const colorRandom = getRandomColor();
 
     return (props) => (

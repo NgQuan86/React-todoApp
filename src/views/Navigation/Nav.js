@@ -8,7 +8,9 @@ class Nav extends React.Component {
             <div>
                 <div className="topnav">
                     <NavLink to="/" >Home</NavLink>
-                    <NavLink to="/todo"  >Todo </NavLink>
+                    <NavLink to="/ListTodo"  >Todo </NavLink>
+                    <NavLink to="/User" end >List user </NavLink>
+                    <NavLink to="/User/:id"  >Detail user </NavLink>
                 </div>
             </div>
         )

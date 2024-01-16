@@ -6,12 +6,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Nav from './Navigation/Nav';
 import Home from './Home';
-import {
-  BrowserRouter, // router version 6 
-  Routes,
-  Route,
-
-} from "react-router-dom";
+import ListUser from './Users/ListUser';
+import DetailUser from './Users/DetailUser';
+import { BrowserRouter, Routes, Route, } from "react-router-dom";  // router version 6
 
 function App() {
   return (
@@ -24,8 +21,12 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
 
           <Routes>
-            <Route path="/"  element={<Home />} />
-            <Route path="/todo"  element={<ListTodo />} />
+            
+              <Route path="/" element={<Home />} />
+              <Route path="/ListTodo" element={<ListTodo />} />
+              <Route path="/user" element={<ListUser />} />
+              <Route path="/user/:id" element={<DetailUser />} />
+            
           </Routes>
 
         </header>
